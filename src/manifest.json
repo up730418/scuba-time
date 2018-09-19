@@ -1,0 +1,28 @@
+{
+  "lang": "en",
+  "name": "Scuba Time Scuba Diving Center",
+  "scope": "/",
+  "display": "fullscreen",
+  "start_url": "scuba-time.co.uk",
+  "short_name": "Scuba Time",
+  "theme_color": "#125cce",
+  "description": "Scuba Time are a PADI scuba diving training centre based in Bishops Stortford. We provide a range of services including courses from Open Water to Divemaster and Holidays to some of the best dive destination in the world.",
+  "orientation": "any",
+  "background_color": "transparent",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32"
+    },
+    {
+      "src": "/assets/img/logo-square.png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/assets/img/splash.jpg",
+      "sizes": "512x512"
+    }
+  ]
+}

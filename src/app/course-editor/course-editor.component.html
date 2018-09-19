@@ -1,0 +1,82 @@
+<div class="corseForm">
+{{diagnostic}}
+  <h2>Course Editor</h2>
+
+  <form #courseForm="ngForm" (ngSubmit)="onSubmit()" *ngIf="model">
+    
+    <div>
+      <label for="id">Title</label>
+      <input type="text" [(ngModel)]="model.id" name="id" required>    
+    </div>
+    <div>
+      <label for="img">Image</label>
+      <input type="text" [(ngModel)]="model.img" name="img" required>    
+    </div>
+    
+    <div>
+      <label for="gallery">Gallery</label>
+      <input type="text" [(ngModel)]="model.gallery" name="gallery" required>    
+    </div>
+    
+    <div>
+      <label for="name">Name</label>
+      <input type="text" [(ngModel)]="model.name" name="name" required>    
+    </div>
+    
+    <div>
+      <label for="pageOrder">page Order</label>
+      <input type="number" [(ngModel)]="model.pageOrder" name="pageOrder" required>    
+    </div>
+    
+    <div>
+      <label for="price">Price</label>
+      <input type="number" step="0.00" name="price" [(ngModel)]="model.price" required>    
+    </div>
+    
+    <div>
+      <label for="header">Header</label>
+      <textarea name="header" [(ngModel)]="model.header" required>   </textarea> 
+    </div>
+    <div>
+      <label for="footer">Footer</label>
+      <textarea name="footer" [(ngModel)]="model.footer" required>   </textarea> 
+    </div>
+    
+    <h3>Process:</h3>
+    <div id="courseDetails">
+      <div *ngFor="let detail of model.details; let i = index; trackBy: trackByFn">
+        <div>
+          <label for="detail.question">Question</label>
+          <textarea type="text" [(ngModel)]="detail.question" name="courseQuestion{{i}}" required> </textarea> 
+        </div>
+        <div>
+          <label for="detail.answer">Answer</label>
+          <textarea type="text"  [(ngModel)]="detail.answer" name="courseAnswer{{i}}" required> </textarea>    
+        </div>
+         <button (click)="removeDetails(i)" type="button">Remove Details</button>
+      </div>
+      <button (click)="addDetails()" type="button">Add Details</button>
+    </div>
+      
+    <h3>Break Down</h3>
+    <div id="courseBreakDown">
+      <div *ngFor="let breakdown of model.breakDown; let y = index; trackBy: trackByFn">
+        <div>
+          <label for="breakdown.question">Question</label>
+          <textarea type="text" [(ngModel)]="breakdown.question" name="breakDownQuestion{{y}}" required> </textarea> 
+        </div>
+        <div>
+          <label for="breakdown.answer">Answer</label>
+          <textarea type="text"  [(ngModel)]="breakdown.answer" name="breakDownanswer{{y}}" required> </textarea>    
+        </div>
+         <button (click)="removeBreakDown(y)" type="button">Remove Details</button>
+      </div>
+      <button (click)="addBreakDown()" type="button">Add Details</button>
+    </div>
+    
+  
+    <button type="submit" class="btn">Save</button>
+  </form>
+  
+  <button class="deleteButton" (click)="deleteCourse(model.id)" type="button">Delete Course</button>
+</div>

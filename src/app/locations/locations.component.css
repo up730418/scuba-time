@@ -1,0 +1,98 @@
+#locationsContainer{
+  display: block;
+  margin: auto;
+  text-align: center;
+  
+}
+.location{
+  background-color: #fbfbfb;
+  display: inline-block;
+  width: 30vw;
+  min-width: 30em;
+  height: 20vh;
+  min-height: 20em;
+  -webkit-box-shadow: 3px 6px 16px -2px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 3px 6px 16px -2px rgba(0, 0, 0, 0.55);
+  box-shadow: 3px 6px 16px -2px rgba(0, 0, 0, 0.55);
+  margin-left: 1em;
+  margin-top: 2em;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  
+}
+
+.coursesHeading, .coursePara{
+  text-align: center;
+  
+}
+
+.courseContainer a{
+  text-decoration: none;
+  color: black;
+  max-height: 100%;
+  
+}
+
+.memberImg{
+  display: block;
+  height: 40%;
+  margin: auto;
+
+}
+
+.memberName{
+  text-align: center;
+  font-size: 2em;
+  padding-right: 10px;
+  padding-left: 10px;
+  
+}
+
+.memberLevel{
+  text-align: center;
+  font-size: 1.5em;
+  padding-right: 10px;
+  padding-left: 10px;
+  
+}
+
+.memeberDetail {
+  padding-right: 10px;
+  padding-left: 10px;
+  display: block;
+  overflow: hidden;
+
+}
+
+.memeberDetail span.one{
+  font-weight: bold;
+  padding-right: 5%;
+}
+
+.memeberDetail span.two{
+  
+  padding-left: 5%;
+}
+
+#calendar iframe{
+  max-width: 98%;
+  display: block;
+  margin: auto;
+  padding-top: 1em;
+}
+
+@media screen and (max-width: 48em){
+  .teamContainer{
+      width: 90vw;
+      min-width: auto;
+      height: auto;
+
+  }
+  
+  .memberImg{
+    height: 20vh;
+
+
+  }
+}

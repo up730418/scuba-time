@@ -1,0 +1,17 @@
+<div id="galleryContainer">
+  <div id="galleryImages" class="shadow" >
+    <img *ngFor="let image of imagesArray" class='' src="{{image}}" />
+
+    <div id="galleryControls">
+      <span *ngFor="let image of imagesArray" class="">&#9679; </span>
+    </div>
+  </div>
+  
+  
+  <div id="galleryBack" >
+    <span class="left" (click)="galleryBackButton()">&lt;</span>
+    <span class="right" (click)="galleryNextButton()">&gt;</span>
+  </div> 
+
+  &middot;
+</div>

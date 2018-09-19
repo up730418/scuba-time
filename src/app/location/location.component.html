@@ -1,0 +1,31 @@
+<div >
+  <div class="courses">
+    <h1 class= "locationHeading"> {{location.name}} </h1>
+    <app-gallery id="locationGallery" images="{{location.gallery}}"></app-gallery>
+    <div id="locationDescription">
+      <p>{{location.description}}</p>
+    </div>
+    
+    <div id="locationDetails" *ngIf="location.details">
+      <ul id="locationDetails">
+        <li>Max Depth: {{location.details.maxDepth}}</li>
+        <li>Points of intrest:
+          <ul>
+            <li *ngFor="let poi of location.details.pointsofIntrest">
+              {{poi}}
+            </li>
+          </ul>
+        </li>
+        <li>Facilities:
+          <ul>
+            <li *ngFor="let fac of location.details.facilites">
+             {{fac}}
+            </li>
+          </ul>
+        </li>
+        <li> Addresss: {{location.address}}</li>
+        <li> Map: <a href="{{location.map}}" target="_blank"> Click Here to view</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,148 @@
+#membersContainer{
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.teamContainer{
+  background-color: #fbfbfb;
+  display: inline-block;
+  width: 30vw;
+  min-width: 30em;
+  height: 30vh;
+  min-height: 40em;
+  -webkit-box-shadow: 3px 6px 16px -2px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 3px 6px 16px -2px rgba(0, 0, 0, 0.55);
+  box-shadow: 3px 6px 16px -2px rgba(0, 0, 0, 0.55);
+  margin-left: 1em;
+  margin-top: 2em;
+  overflow: hidden;
+  
+}
+
+.coursesHeading, .coursePara{
+  text-align: center;
+  
+}
+
+.courseContainer a{
+  text-decoration: none;
+  color: black;
+  max-height: 100%;
+  
+}
+
+.memberImg{
+  display: block;
+  height: 40%;
+  margin: auto;
+
+}
+
+.memberName{
+  text-align: center;
+  font-size: 2em;
+  padding-right: 10px;
+  padding-left: 10px;
+  
+}
+
+.memberLevel{
+  text-align: center;
+  font-size: 1.5em;
+  padding-right: 10px;
+  padding-left: 10px;
+  
+}
+
+.memeberDetail {
+  padding-right: 10px;
+  padding-left: 10px;
+  display: block;
+  overflow: hidden;
+
+}
+
+.memeberDetail span.one{
+  font-weight: bold;
+  padding-right: 5%;
+}
+
+.memeberDetail span.two{
+  
+  padding-left: 5%;
+}
+
+#calendar iframe{
+  max-width: 98%;
+  display: block;
+  margin: auto;
+  padding-top: 1em;
+}
+
+#scubaFAQHeader {
+  text-align: center;
+}
+#scubaFAQDescription {
+  text-align: center;
+}
+
+#faqs {
+  padding-left: 1em; 
+}
+
+#faqs > h5{
+  margin-bottom: 0em;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+#faqs > p {
+  margin-top: 0.2em;
+  padding-left: 1em;
+}
+
+/*
+.questionExpandable > p{
+  display: block;
+  line-height: 1.5em; 
+}
+*/
+/*
+.questionExpandable:hover{
+  max-height: 2000vh;
+  padding-bottom: 1em;
+  overflow: visible;
+  cursor: pointer;
+  transition: 1s;
+}
+*/
+/*
+.questionExpandable:active{
+  max-height: 2001vh;
+  padding-bottom: 1.1em;
+  overflow-y: visible;
+  transition: 1.1s;
+}
+*/
+
+.hidden{
+  display: none
+
+}
+
+@media screen and (max-width: 48em){
+  .teamContainer{
+    width: 90vw;
+    min-width: auto;
+    height: auto;
+    min-height: auto;
+
+  }
+  
+  .memberImg{
+    height: 20vh;
+
+
+  }
+}

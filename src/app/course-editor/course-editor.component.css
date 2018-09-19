@@ -1,0 +1,27 @@
+div{
+  padding-bottom: 2em;
+  
+}
+
+label{
+  vertical-align: middle;
+}
+
+input[type="text"]{
+  width: 50%;
+  height: 2em;
+}
+
+input[type="number"]{
+    width: 50%;
+  height: 2em;
+}
+
+textarea{
+    width: 50%;
+  height: 6em;
+}
+
+.deleteButton{
+  margin-top: 2em;
+}

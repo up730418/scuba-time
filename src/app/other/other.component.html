@@ -1,0 +1,40 @@
+<div [ngSwitch]="templateToLoad">
+
+  <div *ngSwitchCase="'meet-the-team'">
+    <div class="courses">
+      <h1 class= "coursesHeading"> Take a look below to see our amazing, dedicated team! </h1>
+      <div id="membersContainer">
+        <div class="teamContainer"  *ngFor="let member of teamMembers">
+          <img class="memberImg" src="assets/{{member.img}}" alt="Scuba Time member {{member.name}}"/>
+          <p class="memberName"> {{member.name}}</p>
+          <p class="memberLevel"> {{member.level}}</p>
+          <p class="memeberDetail"><span class="one">What is your favourite dive destination? </span> <br/>
+                                    <span class="two"> &#9679; {{member.diveSite}} </span> </p>
+          <p class="memeberDetail" *ngIf="member.course"><span class="one">What is your favourite course to teach? </span> <br/> 
+                                    <span class="two"> &#9679; {{member.course}} </span> </p>
+        </div>
+      </div>
+    </div>  
+  </div>
+  
+  <div *ngSwitchCase="'calendar'">
+    <div id="calendar">
+      <iframe src="https://calendar.google.com/calendar/embed?src=sc2daudf2vu4c9suo0tvc8l864%40group.calendar.google.com&ctz=Europe/London" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </div>
+  
+  <div *ngSwitchCase="'faq'">
+    <h1 id="scubaFAQHeader">The Scuba Diving FAQ</h1>
+    <p id="scubaFAQDescription"> Click a question for more information</p>
+    <div id="faqs" *ngFor="let f of faq; let i = index;" (click)="toggleHidden(i)">
+      <h5 id="faqQuestion-{{i}}" >{{f.question}}?</h5>
+      <p id="faqAnswer-{{i}}" class="hidden">{{f.answer}}</p>
+    </div>
+  </div>
+  
+  <div *ngSwitchDefault>
+    <p>Aw Snap. Not sure how you got here. Fancy going 
+      <a class="button" routerLink="learnToScubaDive">Home?</a>
+    </p>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="courses">
+  <h1 class= "coursesHeading"> A list of avaliable diving courses are displayed below</h1>
+  <p class="coursePara">For private tuition in your own pool/lake or ours please get in contact now!</p>
+  <a class="button center" routerLink="/scubaDiving/calendar" >Course Calendar</a>
+  
+  <div id="coursesContainer">
+    <div class="courseContainer" *ngFor="let course of courses" (click)="onSelect(course.id)">
+      
+      <a routerLink='/scubaDivingCourses/{{course.id}}' >
+        <div class="courseImgContainer">
+          <img class="courseImg" src="{{course.img}}" alt="{{course.name}}"/>
+        </div>
+        <h3 class="courseTitle"> {{course.name}}</h3>
+        <p class="courseDescription">{{course.header}} </p>
+      </a>
+
+    </div>
+  </div>
+  <img id="courseChart" src="./assets/img/PADICoursesChart.png" alt="PADI Course Chart"/>
+  
+  
+</div>  

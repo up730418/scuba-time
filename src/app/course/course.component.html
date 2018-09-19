@@ -1,0 +1,37 @@
+<div *ngIf="course" class="courseContent">
+<p></p>
+  <h1 class="courseTitle"> {{course.name}}</h1>
+  <div class="coursePrice" *ngIf="course.price"> &pound;{{course.price }}</div>
+  <app-gallery  images="{{course.gallery}}"></app-gallery >
+
+  <div id="courseHeader">
+    <p>{{course.header}}</p>
+  
+  </div>
+  
+  <h3 *ngIf="course.details?.length > 0" >Process:</h3>
+  <div *ngFor="let detail of course.details">
+    <div class="details">
+      <p class="question">{{detail.question}}</p>
+      <pre class="answer">{{detail.answer}}</pre>
+    </div>
+  </div>
+  <h3 *ngIf="course.breakDown?.length > 0" >Course Breakdown:</h3>
+  <div *ngFor="let breakdown of course.breakDown">
+    <div class="details">
+      <p class="question">{{breakdown.question}}</p>
+      <pre class="answer">{{breakdown.answer}}</pre>
+    </div>
+  </div>
+  
+  <div id="courseFooter">
+    <p>{{course.footer}}</p>
+  
+  </div>
+  
+  <div id="bookingForm">
+      <p>The booking form can be found:</p>
+      <a class="button" href="./assets/docs/ScubaTimeBookingForm.pdf" target="_blank"> Here</a>
+  </div>
+
+</div>

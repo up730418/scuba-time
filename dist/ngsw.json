@@ -1,0 +1,60 @@
+{
+  "configVersion": 1,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/manifest.json",
+        "/inline.bef643b007a849c18d95.bundle.js",
+        "/main.a1ec5514922fd7b10cbe.bundle.js",
+        "/polyfills.b25eca0a18d5d7cd6d6f.bundle.js",
+        "/styles.76f45f82f3eae4a59489.bundle.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api-performance",
+      "patterns": [
+        "\\/scubaDivingCourses"
+      ],
+      "strategy": "performance",
+      "maxSize": 1000,
+      "maxAge": 2592000000,
+      "version": 1
+    },
+    {
+      "name": "blog",
+      "patterns": [
+        "\\/blog",
+        "\\/blog\\/"
+      ],
+      "strategy": "freshness",
+      "maxSize": 0,
+      "maxAge": 0,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/inline.bef643b007a849c18d95.bundle.js": "77a8bf804d024679b448848b71e9bb4633440896",
+    "/main.a1ec5514922fd7b10cbe.bundle.js": "dad0fde86de6fdd9c5b48b2e7c816da994d6ba9b",
+    "/polyfills.b25eca0a18d5d7cd6d6f.bundle.js": "1214d5fb0a2e7384b9532789829d68f949537e2b",
+    "/styles.76f45f82f3eae4a59489.bundle.css": "36832e101ed53813df05305a8c489f0244c0cc73",
+    "/favicon.ico": "c4e525c40a8fdd3dbd8b2eefbf29c988c1560124",
+    "/index.html": "6febf62254d852381134be34b11db33d4c0e4a20",
+    "/manifest.json": "ee0479ac610a6b0e2a5490c1fe3b82105ef04416"
+  }
+}

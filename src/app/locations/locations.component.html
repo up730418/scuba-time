@@ -1,0 +1,15 @@
+<div >
+  <div class="courses">
+    <h1 class= "coursesHeading"> Take a look below to see some of Scuba Times&#39; favorite locations </h1>
+    <div id="locationsContainer">
+      <a class="location"  *ngFor="let location of locations" href="/scubaDivingLocations/{{location.title}}">
+        <div class="courseImgContainer" >
+          <img class="courseImg" src="assets/{{location.img}}" alt="{{location.title}} overview"/>
+        </div>
+        <p class="memberName"> {{location.name}}</p>
+        <p class="memeberDetail">{{location.shortDescription}} </p>
+
+      </a>
+    </div>
+  </div>  
+</div>

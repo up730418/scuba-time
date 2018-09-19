@@ -1,0 +1,18 @@
+.locationHeading {
+  text-align: center;
+  padding: 0.6em;
+}
+#locationDescription {
+  margin: 1em;
+}
+
+#locationDetails > li {
+  margin-top: 0.4em;
+}
+#locationDetails > li > ul > li {
+  margin-top: 0.2em;
+}
+
+#locationGallery { 
+  height: 60em;
+}

@@ -1,0 +1,257 @@
+.homeContent{
+
+
+}
+#topImg{
+  display:block;
+  max-width: 90vw;
+  width: auto;
+  height: auto;
+  max-height: 50vh;
+  margin: auto;
+}
+
+.two{
+  margin-top: 1vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  background-color: #47acef;
+  text-align: center;
+}
+
+.two > h2 {
+  color: white;
+  
+}
+.two > p {
+  color: white;
+  
+}
+
+
+.one{
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 60vh;
+  margin-top: 1em;
+}
+
+.one > h1{
+  display: block;
+  margin: auto;
+  font-size: 2.5em;
+  width: 80%;
+  text-align: center;
+}
+
+.one > h3{
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.centerText{
+  text-align: center;
+}
+
+
+
+.scubaTitle{
+  
+}
+.left{
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+}
+.right{
+  display: inline-block;
+  width: 48%;
+  margin-right: 0;
+}
+
+.right img{
+  display: block;
+  width: auto;
+  max-width: 90vw;
+  height: auto;
+  max-height: 50vh;
+  margin: auto;
+}
+
+.courseCard{
+  background-color: #f7f7f7;
+  display: inline-block;
+  height: 100%;
+  width: 48%;
+  box-shadow: 0 24px 32px 0 rgba(47,72,88,.1);
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  margin-bottom: 4em;
+  margin-right: 1em; 
+  vertical-align: top;
+  padding-bottom: 1em;
+  
+}
+
+.courseCard a {
+  text-decoration: none;
+  color: #42A5F5;
+}
+
+.courseCard > a > h3{
+  color:#2f4858;
+}
+
+.courseCard > a > p{
+  display: inline-block;
+  color:#2b4250;
+  width: 90%;
+  margin: auto;
+}
+
+.courseCard:hover {
+  color: red;
+  background-color: #e6e7e7;
+  transition: 0.2s;
+  
+}
+
+/*.courseCard{
+  display: inline-block;
+  margin-bottom: 2em;
+  width: 40%;
+  border: 1px black solid;
+  vertical-align: top;
+  height: 100%;
+}*/
+
+.offerButton{
+  display: inline-block;
+  vertical-align: top;
+  margin: auto;
+  width: 25%;
+  max-height: 3em;
+  margin-left: 15%;
+  margin-top: 1em;
+  text-align: center;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #42A5F5;
+  color: white;
+  line-height: 3em;
+  overflow: hidden;
+  transition: 0.5s;
+  
+}
+
+.offerButton > p{
+  display: block;
+  line-height: 1.5em; 
+  width: 80%;
+  margin:auto;
+}
+
+.offerButton:hover{
+  max-height: 2000vh;
+  padding-bottom: 1em;
+  overflow: visible;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.offerButton:click{
+  max-height: 2001vh;
+  padding-bottom: 1.1em;
+  overflow-y: visible;
+  transition: 1.1s;
+}
+
+
+#about{
+  min-height: 100vh;
+  color: #2f4858;
+  text-align: justify;
+  display: inline-block;
+  
+}
+
+#about p{ 
+  display:block;
+  margin: auto;
+  width: 90%;
+  font-size: 1.5em;
+  
+}
+
+#about h2{
+  text-align: center;
+}
+
+.double{
+  padding-top: 2em;
+  display: inline-block;
+  padding-left: 7%;
+  width: 40%;
+  height: auto;
+  padding-bottom: 1em;
+  
+}
+
+@media screen and (max-width: 48em){
+ 
+  h1{
+    font-size: 1em
+  }
+  
+  h2{
+    font-size: 3em;
+  }
+  .courseCard{
+    background-color: #fdffff;
+    display: inline-block;
+    height: 100%;
+    width: 90%;
+    box-shadow: 0 24px 32px 0 rgba(47,72,88,.1);
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    margin-bottom: 4em;
+    margin-right: 1em; 
+    vertical-align: top;
+  
+  } 
+  .courseCard > a > h3{
+    font-size: 2em;     
+  }
+  .courseCard > a > p{
+    font-size: 1.5em;
+    text-align: left;
+  }
+  
+  .offerButton{
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 1em;
+    font-size: 2em;
+    width: 100%;
+  }
+  
+  .offerButton > p{
+    text-align: left;
+    margin: auto;
+    width: 70%;
+  }
+  
+  .two > p {
+    font-size: 1em;
+  }
+  
+  .double{
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding-left: 0%;
+  
+  }
+
+}

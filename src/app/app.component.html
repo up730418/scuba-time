@@ -1,0 +1,59 @@
+<nav>
+  <div id="logo">
+      <img src="assets/img/logoBlack.png" alt="Scuba Time Logo" routerLink="/learnToScubaDive"/>
+  </div>
+  <section id="pagesMobile" (click)="hamMenu()">
+      <p id="pagesMobilep">&#9776;</p>
+  </section>
+
+  <section id="pages">
+      <a routerLink="/learnToScubaDive" (click)="hamMenu()">Home</a>
+      <a routerLink="learnToScubaDive" fragment="about" (click)="goToAbout('about')">About</a>
+      <a routerLink="/scubaDivingCourses" (click)="hamMenu()">Courses</a>
+      <a href="javascript:void()" (click)="goToContact()" >Contact</a>
+      <a href="http://blog.scuba-time.co.uk">Blog</a>
+  </section>
+</nav>
+<div id="loader">
+  <div class="loader"></div>
+</div>
+<router-outlet></router-outlet>
+
+<footer id="contactFoot">
+  <div class="leftFifty">
+      <h4>Address:</h4>
+      <p>Scuba Time             <br/>
+          Unit 2                <br/>
+          The Links			 	<br/>
+          Raynham Road			<br/>
+          Bishops Stortford		<br/>
+          CM23 5AZ				<br/>
+      </p>
+      <a href="tel:07740279250">Tel: 07740279250</a>
+      <a href="tel:07740279254">Tel: 07740279254</a>
+      <a href="mailTo:info@scuba-time.co.uk">Email: info@scuba-time.co.uk</a>	
+      <div id="socialMedia">
+        <a href="https://www.facebook.com/scubaTimeLtd/"><img src="/assets/img/fLogo.png"></a>
+        <a href="https://plus.google.com/108798660191348122148"><img src="/assets/img/logo-google-plus.png"></a>
+      </div>
+      <br/>
+      <a href="./assets/sitemap.xml"> Sitemap</a>
+  </div>
+
+  <div class="rightFifty">
+      <h4>Contact Us</h4>
+    <form>
+      <div class="form" *ngIf="emailModel"  id="contact" >
+          <p><input type="text" [(ngModel)]="emailModel.name" name="name" placeholder="Name" required/> </p>
+          <p><input type="tel" [(ngModel)]="emailModel.contactNo" name="contactNo" placeholder="Contact Number" /></p>
+          <p><input type="email" [(ngModel)]="emailModel.email" name="email" placeholder="Email" rrequired/></p>
+          <p><input type="text" [(ngModel)]="emailModel.intrest" name="interest" placeholder="Interested In" required/></p>
+          <p><textarea name="message" [(ngModel)]="emailModel.extraDetails" placeholder="Extra Details" max="1000"></textarea></p>
+          <div class="submit">
+              <input type="submit" name="submit" id="button-submit" value="Send" (click)="submitEmail()"/>
+          </div>
+
+      </div>
+   </form>
+  </div>
+</footer>

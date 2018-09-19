@@ -1,0 +1,60 @@
+.courseContent{
+  display: block;
+  margin: auto;
+  width: 60vw;
+  background-image: url();
+  
+}
+
+h3{ 
+  color: #17365d;
+  font-size: 1.4;
+}
+
+.courseTitle{
+  text-align: center;
+  color: #125cce;
+}
+
+.coursePrice{
+  text-align: center;
+  color: #42A5F5;
+  font-size: 2em;
+}
+
+.question{
+  color: #42A5F5;
+  font-size: 1.2em;
+  
+}
+.details{
+  padding-bottom: 1em;
+  padding-left: 1em;
+}
+
+.answer{
+  color: #413d3d;
+  font-family: sans-serif;
+  padding-left: 1em;
+  white-space: pre-wrap;
+}
+#courseHeader p{
+  font-size: 1.2em
+}
+#courseFooter p{
+  font-size: 1.2em
+}
+
+p{
+  line-height: 1.5em;
+}
+
+@media screen and (max-width: 48em){
+  .courseContent{
+    width: 90vw;
+  }
+  #bookingForm  {
+    margin-bottom: 1em;
+  }
+  
+}
